@@ -24,10 +24,10 @@ public class Application {
     @Bean
     public SslContextFactory sslContextFactory() {
         SslContextFactory sslContextFactory = new SslContextFactory();
-        sslContextFactory.setKeyStoreResource(Resource.newClassPathResource("keystore.jks"));
-        sslContextFactory.setTrustStoreResource(Resource.newClassPathResource("keystore.jks"));
-        sslContextFactory.setKeyStorePassword("peter26983045");
-        sslContextFactory.setTrustStorePassword("peter26983045");
+        sslContextFactory.setKeyStoreResource(Resource.newClassPathResource("www.backkoms.com.jks"));
+        sslContextFactory.setTrustStoreResource(Resource.newClassPathResource("www.backkoms.com.jks"));
+        sslContextFactory.setKeyStorePassword("Peter26983045");
+        sslContextFactory.setTrustStorePassword("Peter26983045");
         return sslContextFactory;
     }
 
